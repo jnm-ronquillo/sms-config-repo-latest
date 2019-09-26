@@ -2,7 +2,7 @@ zuul.ignored-services: "*"
 zuul.prefix:  /api
 zuul.routes.serviciocliente: /cliente/**
 zuul.routes.servicioprestamo: /prestamo/**
-zuul.routes.authenticationservice: /auth/**
+zuul.routes.servicioautenticacion: /auth/**
 #zuul.routes.prestamoestatico.path: /prestamoestatico/**
 #zuul.routes.prestamoestatico.url:  http://servicioprestamo-estatico:8081
 #zuul.routes.prestamoestatico.serviceId: prestamoestatico
