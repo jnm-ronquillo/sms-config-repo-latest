@@ -8,7 +8,7 @@ zuul.routes.servicioautenticacion: /auth/**
 #zuul.routes.prestamoestatico.serviceId: prestamoestatico
 #zuul.routes.prestamoestatico.ribbon.listOfServers: http://servicioprestamo-estatico:8081, http://servicioprestamo-estatico:8082
 #ribbon.eureka.enabled: false
-zuul.sensitiveHeaders: Cookie,Set-Cookie
+zuul.sensitiveHeaders: Cookie,Set-Cookie,Authorization
 zuul.debug.request: true
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 7000
 #hystrix.command.servicioprestamo.execution.isolation.thread.timeoutInMilliseconds: 7000
