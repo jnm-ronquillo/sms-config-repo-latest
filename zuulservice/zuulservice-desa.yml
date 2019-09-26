@@ -1,0 +1,15 @@
+zuul.ignored-services: "*"
+zuul.prefix:  /api
+zuul.routes.serviciocliente: /cliente/**
+zuul.routes.servicioprestamo: /prestamo/**
+zuul.routes.authenticationservice: /auth/**
+#zuul.routes.prestamoestatico.path: /prestamoestatico/**
+#zuul.routes.prestamoestatico.url:  http://servicioprestamo-estatico:8081
+#zuul.routes.prestamoestatico.serviceId: prestamoestatico
+#zuul.routes.prestamoestatico.ribbon.listOfServers: http://servicioprestamo-estatico:8081, http://servicioprestamo-estatico:8082
+#ribbon.eureka.enabled: false
+zuul.sensitiveHeaders: Cookie,Set-Cookie
+zuul.debug.request: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
+#hystrix.command.servicioprestamo.execution.isolation.thread.timeoutInMilliseconds: 7000
+#servicioprestamo.ribbon.ReadTimeout: 7000

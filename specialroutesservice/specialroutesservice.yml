@@ -1,0 +1,17 @@
+spring.jpa.database: "POSTGRESQL"
+spring.datasource.platform:  "postgres"
+spring.jpa.show-sql: "true"
+spring.database.driverClassName: "org.postgresql.Driver"
+spring.datasource.url: "jdbc:postgresql://database:5432/fintech"
+spring.datasource.username: "postgres"
+spring.datasource.password: "{cipher}f2743ade2f2768880adffb2c07494c432af1a72a844b7e9ac13bf84c821f545d"
+spring.datasource.testWhileIdle: "true"
+spring.datasource.validationQuery: "SELECT 1"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+
+
+## Agregado
+spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults: false
+# Mostrar el detalle de la salud de un servicio
+management.endpoint.health.show-details: always
+management.endpoints.web.exposure.include: "*"

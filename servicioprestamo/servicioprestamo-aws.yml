@@ -1,0 +1,17 @@
+spring.jpa.database: "POSTGRESQL"
+spring.datasource.platform:  "postgres"
+spring.jpa.show-sql: "true"
+spring.database.driverClassName: "org.postgresql.Driver"
+# spring.datasource.url: "jdbc:postgresql://database:5432/fintech"
+spring.datasource.url: "jdbc:postgresql://sms-fintech.csm8cidoalon.us-west-2.rds.amazonaws.com:5432/sms_fintech_desa"
+spring.datasource.username: "root"
+spring.datasource.password: "rootroot"
+spring.datasource.testWhileIdle: "true"
+spring.datasource.validationQuery: "SELECT 1"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+
+
+# Redis Server
+redis.server: "sms-fintech-redis.dmq105.0001.usw2.cache.amazonaws.com"
+redis.port: "6379"
+
